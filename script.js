@@ -108,3 +108,48 @@ window.sr = ScrollReveal({ reset: true });
 sr.reveal(".Titulo1", { duration: 2000 });
 
 sr.reveal(".btnSolicitar");
+
+window.sr = ScrollReveal({
+  reset: false,
+  distance: "60px",
+  duration: 1200,
+  delay: 200,
+});
+
+// Header principal
+sr.reveal(".boxTitulo1", { origin: "left" });
+sr.reveal(".imgDireitaHeader", { origin: "right" });
+
+// Sobre nós
+sr.reveal(".sobreNosTitulo", { origin: "top" });
+sr.reveal(".tituloNiveldeCuidado", { origin: "left" });
+sr.reveal(".TestoPrincipal-2", { origin: "bottom" });
+sr.reveal(".BoxVisao", { origin: "left", delay: 300 });
+sr.reveal(".BoxMissao", { origin: "right", delay: 300 });
+sr.reveal(".BoxBtn", { origin: "bottom", delay: 500 });
+
+// Contadores (principal3)
+sr.reveal(".MiniBoxClt", { origin: "bottom", interval: 200 });
+sr.reveal(".MiniBoxAnos", { origin: "bottom", interval: 300 });
+sr.reveal(".MiniBoxclassifica", { origin: "bottom", interval: 400 });
+
+// Formulário
+sr.reveal(".TituloForm", { origin: "top" });
+sr.reveal(".SubTiutloForm", { origin: "top", delay: 200 });
+sr.reveal(".FormBox input", { origin: "bottom", interval: 100 });
+sr.reveal(".btnSolicitarWht", { origin: "bottom", delay: 500 });
+
+// Planos
+sr.reveal(".BoxTxtplanos", { origin: "top" });
+sr.reveal(".BoxPlanos", { origin: "bottom", interval: 200 });
+
+// Afiliados (slider)
+sr.reveal(".boxAllQuadra", { origin: "bottom", delay: 300 });
+
+// Depoimentos
+sr.reveal(".Testemunhos", { origin: "left", interval: 200 });
+sr.reveal(".Testemunhos2", { origin: "bottom", delay: 300 });
+
+// Footer
+sr.reveal(".IMGFooter", { origin: "left" });
+sr.reveal(".Boxcontatos", { origin: "right" });
