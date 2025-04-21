@@ -1460,3 +1460,22 @@ footer {
     width: 20%;
   }
 }
+/* Correção do menu passando do limite no celular */
+@media only screen and (max-width: 767px) {
+  nav,
+  .wrapper,
+  .nav-links {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
