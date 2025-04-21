@@ -862,11 +862,13 @@ input::placeholder {
   display: none;
 }
 #principal7 {
-  height: 70vh;
+  padding: 50px 0;
 }
+
 .BoxTestemunh {
   width: 100%;
   height: auto;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -887,7 +889,7 @@ input::placeholder {
   border-radius: 20px;
   height: 36vh;
   background-color: #f1f1f1;
-  margin-top: 70px;
+  margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -918,9 +920,10 @@ input::placeholder {
 }
 footer {
   width: 100%;
-  height: 40vh;
+  padding: 40px 0;
   background-color: #0979b0;
 }
+
 .allBoxFooter {
   width: 100%;
   display: flex;
@@ -981,6 +984,10 @@ footer {
   text-align: center;
 
   color: white;
+}
+section {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Telas extra grandes (1400px ou mais) */
@@ -1090,7 +1097,7 @@ footer {
     margin-top: 10px;
   }
   #principal7 {
-    height: 145vh;
+    padding: 50px 0;
   }
   .BoxTestemunh {
     display: flex;
@@ -1168,7 +1175,7 @@ footer {
     margin-top: 10px;
   }
   #principal7 {
-    height: 145vh;
+    padding: 50px 0;
   }
   .BoxTestemunh {
     display: flex;
@@ -1294,7 +1301,7 @@ footer {
     margin-top: 10px;
   }
   #principal7 {
-    height: 145vh;
+    padding: 50px 0;
   }
   .BoxTestemunh {
     display: flex;
