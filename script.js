@@ -153,3 +153,52 @@ sr.reveal(".Testemunhos2", { origin: "bottom", delay: 300 });
 // Footer
 sr.reveal(".IMGFooter", { origin: "left" });
 sr.reveal(".Boxcontatos", { origin: "right" });
+
+// Contador animado com ícone de + somente onde precisa
+function animateNumberWithSuffix(element, start, end, duration, suffix = "") {
+  let startTime = null;
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    const current = Math.floor(progress * (end - start) + start);
+    element.innerHTML = `${current}${suffix}`;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+let countStarted = false;
+function handleScrollCount() {
+  if (countStarted) return;
+  const box = document.querySelector("#principal3");
+  const boxTop = box.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+  if (boxTop < windowHeight) {
+    countStarted = true;
+    animateNumberWithSuffix(
+      document.querySelector(".numberClt"),
+      0,
+      3862,
+      2000,
+      ' <i class="fa-solid fa-plus"></i>'
+    );
+    animateNumberWithSuffix(
+      document.querySelector(".nunberAnos"),
+      0,
+      19,
+      2000,
+      ' <i class="fa-solid fa-plus"></i>'
+    );
+
+    window.removeEventListener("scroll", handleScrollCount);
+  }
+}
+
+window.addEventListener("scroll", handleScrollCount);
+
+// Fecha menu mobile ao clicar nos links
+$(document).ready(function () {
+  $(".linksNv").click(function () {
+    $("#close-btn").prop("checked", true);
+  });
+});

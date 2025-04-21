@@ -927,10 +927,16 @@ footer {
 .allBoxFooter {
   width: 100%;
   display: flex;
+
+  justify-content: space-between;
 }
 .IMGFooter {
-  width: 40%;
+  width: 30%;
+
   padding: 40px;
+  margin: auto;
+}
+.contatos {
 }
 .fa-whatsapp {
   color: white;
@@ -952,11 +958,13 @@ footer {
 }
 
 .Boxcontatos {
-  width: 40%;
+  width: 50%;
   height: auto;
   display: flex;
   color: white;
   padding: 20px;
+  margin: auto;
+  justify-content: space-around;
 }
 .Redes {
   margin-left: 30px;
@@ -985,6 +993,12 @@ footer {
 
   color: white;
 }
+.copy {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
 section {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1112,9 +1126,7 @@ section {
   .IMGFooter {
     width: 26%;
   }
-  .ImgFooterLogo {
-    width: 140%;
-  }
+
   .Redes {
     width: 50%;
     margin-left: 30px;
@@ -1190,9 +1202,7 @@ section {
   .IMGFooter {
     width: 26%;
   }
-  .ImgFooterLogo {
-    width: 140%;
-  }
+
   .Redes {
     width: 50%;
     margin-left: 30px;
@@ -1324,10 +1334,10 @@ section {
     height: auto;
   }
   .IMGFooter {
-    width: 26%;
+    width: 60%;
   }
   .ImgFooterLogo {
-    width: 140%;
+    width: 100%;
   }
   .Redes {
     width: 50%;
