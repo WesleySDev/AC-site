@@ -747,13 +747,14 @@ input::placeholder {
 .boxAllQuadra {
   margin-top: 70px;
   width: 100%;
-  height: 30vh;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  min-height: 150px;
+  padding: 10px 0;
 }
-
+.customer-logos img {
+  max-height: 80px;
+  object-fit: contain;
+  margin: auto;
+}
 .AfliadosBox {
   width: 30%;
   padding: 50px;
@@ -1467,6 +1468,7 @@ footer {
   .nav-links {
     max-width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .nav-links {
